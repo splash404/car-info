@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-
 public class TextviewMontserratBold extends TextView {
 
     public TextviewMontserratBold(Context context) {
