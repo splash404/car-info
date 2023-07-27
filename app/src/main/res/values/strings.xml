@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CarInfo</string>
+    <string name="resend"><u>Resend code</u></string>
 </resources>
