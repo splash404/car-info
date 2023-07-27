@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+<<<<<<< HEAD
         ed_mbno = findViewById(R.id.ed_mbno);
         btn_sendotp = findViewById(R.id.btn_sendotp);
 
@@ -50,4 +51,32 @@ public class LoginActivity extends AppCompatActivity {
         Intent i = new Intent(LoginActivity.this,OTPActivity.class);
         startActivity(i);
     }
+=======
+//        ed_mbno = findViewById(R.id.ed_mbno);
+//        tv_sendotp = findViewById(R.id.tv_sendotp);
+
+//        tv_sendotp.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                onButtonClick();
+//            }
+//        });
+
+    }
+
+//    public void onButtonClick()
+//    {
+//        String mobileno = ed_mbno.getText().toString();
+//
+//        if(mobileno.equalsIgnoreCase(""))
+//        {
+//            ed_mbno.setError("Please Enter Mobile No");
+//            ed_mbno.requestFocus();
+//        }
+//        else
+//        {
+//            //call api
+//        }
+//    }
+>>>>>>> b296d563055f6195b87ae246b69bbee5179902d0
 }
