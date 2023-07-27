@@ -17,6 +17,7 @@
 
     <ImageView
         android:id="@+id/iv_pic"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_below="@+id/iv_back"
@@ -51,11 +52,11 @@
         android:layout_gravity="center"
         android:cursorVisible="true"
         android:inputType="number"
+        android:padding="10dp"
+        app:itemHeight="58dp"
         app:itemRadius="5dp"
         app:itemSpacing="20dp"
-        app:itemHeight="58dp"
         app:itemWidth="58dp"
-        android:padding="10dp"
         app:lineColor="@color/black" />
 
     <Button

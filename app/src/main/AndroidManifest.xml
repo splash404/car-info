@@ -12,37 +12,36 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="31">
+
         <activity
-<<<<<<< HEAD
             android:name=".pages.StateActivity"
             android:exported="false" />
+
         <activity
             android:name=".pages.OTPActivity"
             android:exported="false" />
+
+        <activity android:name=".pages.Home"
+            android:exported="false"/>
+
         <activity
             android:name=".pages.LoginActivity"
             android:exported="false" />
+
         <activity
             android:name=".pages.SplashActivity"
-=======
-            android:name=".pages.Home"
->>>>>>> b296d563055f6195b87ae246b69bbee5179902d0
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
 
         </activity>
-        <activity
-            android:name=".pages.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".pages.SplashActivity"
-            android:exported="false">
 
-        </activity>
+
     </application>
 
 </manifest>
