@@ -21,7 +21,7 @@ public class OTPActivity extends AppCompatActivity {
         btn_otp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(OTPActivity.this,Home.class);
+                Intent i = new Intent(OTPActivity.this,StateActivity.class);
                 startActivity(i);
             }
         });

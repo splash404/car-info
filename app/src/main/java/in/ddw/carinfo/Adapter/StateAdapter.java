@@ -2,6 +2,7 @@ package in.ddw.carinfo.Adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,7 @@ import java.util.List;
 
 import in.ddw.carinfo.Model.StateModel;
 import in.ddw.carinfo.R;
+import in.ddw.carinfo.pages.Home;
 
 public class StateAdapter extends RecyclerView.Adapter<StateAdapter.MyViewHolder> {
     Context context;
@@ -46,6 +48,8 @@ public class StateAdapter extends RecyclerView.Adapter<StateAdapter.MyViewHolder
             @Override
             public void onClick(View view) {
                 Toast.makeText(context, "Position "+position, Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(context, Home.class);
+                context.startActivity(i);
             }
         });
     }
