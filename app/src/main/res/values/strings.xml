@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CarInfo</string>
     <string name="resend"><u>Resend code</u></string>
+    <string name="edit"><u>Edit Details</u></string>
 </resources>
