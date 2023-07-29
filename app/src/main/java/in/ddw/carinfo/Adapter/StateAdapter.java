@@ -24,17 +24,15 @@ import in.ddw.carinfo.pages.Home;
 public class StateAdapter extends RecyclerView.Adapter<StateAdapter.MyViewHolder> {
     Context context;
     List<StateModel> stateModelList;
+
     public StateAdapter(Context context, List<StateModel> stateModelList) {
         this.context = context;
         this.stateModelList = stateModelList;
     }
-
-
-
     @NonNull
     @Override
     public StateAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.state_list_item,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.state_list_item, parent, false);
         return new MyViewHolder(view);
     }
 
@@ -47,13 +45,12 @@ public class StateAdapter extends RecyclerView.Adapter<StateAdapter.MyViewHolder
         holder.ll_main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "Position "+position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Position " + position, Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(context, Home.class);
                 context.startActivity(i);
             }
         });
     }
-
 
 
     @Override
@@ -66,10 +63,11 @@ public class StateAdapter extends RecyclerView.Adapter<StateAdapter.MyViewHolder
         ImageView image;
         TextView title;
         LinearLayout ll_main;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-             image = itemView.findViewById(R.id.image);
-             title = itemView.findViewById(R.id.title);
+            image = itemView.findViewById(R.id.image);
+            title = itemView.findViewById(R.id.title);
             ll_main = itemView.findViewById(R.id.ll_main);
         }
     }

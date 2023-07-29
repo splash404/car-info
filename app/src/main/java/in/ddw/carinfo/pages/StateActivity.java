@@ -20,20 +20,18 @@ public class StateActivity extends AppCompatActivity {
     List<StateModel> list;
     StateAdapter stateAdapter;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_state);
 
 
-
         gridList();
         rv_state = findViewById(R.id.rv_state);
-        GridLayoutManager layoutManager = new GridLayoutManager(this,4);
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 4);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         rv_state.setLayoutManager(layoutManager);
-        stateAdapter = new StateAdapter(this,list);
+        stateAdapter = new StateAdapter(this, list);
         rv_state.setAdapter(stateAdapter);
 
     }
@@ -51,11 +49,11 @@ public class StateActivity extends AppCompatActivity {
         list.add(new StateModel(R.drawable.maharashtra, "Odisha"));
         list.add(new StateModel(R.drawable.maharashtra, "Jharkhand"));
         list.add(new StateModel(R.drawable.maharashtra, "Karnataka"));
-        list.add(new StateModel(R.drawable.maharashtra,"Kerla"));
-        list.add(new StateModel(R.drawable.maharashtra,"Rajsthan"));
+        list.add(new StateModel(R.drawable.maharashtra, "Kerla"));
+        list.add(new StateModel(R.drawable.maharashtra, "Rajsthan"));
         list.add(new StateModel(R.drawable.maharashtra, "screen Rotation"));
         list.add(new StateModel(R.drawable.maharashtra, "Battery full"));
-        list.add(new StateModel(R.drawable.maharashtra,"Access Alarm"));
+        list.add(new StateModel(R.drawable.maharashtra, "Access Alarm"));
         list.add(new StateModel(R.drawable.maharashtra, "Mizoram"));
         list.add(new StateModel(R.drawable.maharashtra, "Goa"));
         list.add(new StateModel(R.drawable.maharashtra, "Harayan"));
