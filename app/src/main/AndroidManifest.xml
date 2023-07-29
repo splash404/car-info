@@ -13,7 +13,11 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".pages.SettingActivity"
+=======
+            android:name=".pages.ProfileActivity"
+>>>>>>> 9451567be63f91cb4d1364fcc3bec7e5bdfd4033
             android:exported="false" />
         <activity
             android:name=".pages.StateActivity"
