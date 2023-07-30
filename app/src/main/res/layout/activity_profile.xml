@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".pages.ProfileActivity"
-    android:background="@color/white">
+    tools:context=".pages.ProfileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:orientation="horizontal"
-        android:background="@color/black">
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/iv_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/back_arrow_white"
-            android:padding="5dp"/>
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_arrow_white" />
 
-        <TextView
+        <in.ddw.carinfo.customviews.TextviewMontserratMedium
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
+            android:padding="2dp"
             android:text="Profile"
             android:textColor="@color/white"
             android:textSize="20dp"
-            android:padding="5dp"
-            />
-    </LinearLayout>
+            android:textStyle="bold" />
 
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,34 +45,33 @@
             android:layout_height="wrap_content">
 
 
-
-        <in.ddw.carinfo.customviews.TextviewMontserratBold
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your Profile"
-            android:textColor="@color/black"
-            android:textSize="26dp"
-            android:layout_marginStart="10dp"/>
+            <in.ddw.carinfo.customviews.TextviewMontserratBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Your Profile"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
 
             <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:text="@string/edit"
                 android:textColor="@color/black"
-                android:textSize="22dp"
-                android:layout_alignParentRight="true"/>
+                android:textSize="22dp" />
 
         </RelativeLayout>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:contentPadding="6dp"
+            android:layout_margin="6dp"
             app:cardCornerRadius="12dp"
-            android:layout_margin="6dp">
+            app:contentPadding="6dp">
 
-            git add --all
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+
 </LinearLayout>

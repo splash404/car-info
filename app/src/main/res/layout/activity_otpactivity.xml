@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".pages.OTPActivity">
 
 
@@ -39,51 +39,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/iv_pic"
-<<<<<<< HEAD
-=======
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Enter the 4-digit code that we sent"
-        android:textColor="@color/otp"
-        android:textStyle="bold"
-        android:padding="5dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt1"
-        android:gravity="center"
-        android:text="to +9876543210"
-        android:textColor="@color/otp"
-        android:textStyle="bold"
-        />
-
-    <com.chaos.view.PinView
-        android:id="@+id/pinview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:cursorVisible="true"
-        android:inputType="number"
-       android:layout_centerHorizontal="true"
-        android:padding="10dp"
-        app:itemHeight="50dp"
-        app:itemRadius="5dp"
-        app:itemSpacing="20dp"
-        app:itemWidth="50dp"
-        app:lineColor="@color/black" />
-
-    <Button
-        android:id="@+id/btn_otp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/pinview"
-        android:layout_marginLeft="20dp"
->>>>>>> 9451567be63f91cb4d1364fcc3bec7e5bdfd4033
         android:layout_marginTop="20dp"
         android:padding="5dp"
-        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
         android:orientation="vertical">
 
         <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
@@ -93,33 +55,32 @@
             android:layout_below="@+id/iv_pic"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:padding="5dp"
-            android:textSize="18dp"
             android:text="Enter the 4-digit code that we sent"
             android:textColor="@color/otp"
+            android:textSize="18dp"
             android:textStyle="bold" />
 
         <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt1"
+            android:layout_below="@+id/iv_pic"
             android:gravity="center"
-            android:padding="5dp"
+            android:text=" to  + 8983018125"
+            android:textColor="@color/otp"
             android:textSize="18dp"
-            android:text="to +9876543210"
-            android:textColor="@color/otp"/>
+            android:textStyle="bold" />
 
         <com.chaos.view.PinView
             android:id="@+id/pinview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
             android:cursorVisible="true"
+            android:gravity="center"
             android:inputType="number"
             android:padding="10dp"
             app:itemHeight="50dp"
-            android:layout_marginTop="15dp"
             app:itemRadius="5dp"
             app:itemSpacing="20dp"
             app:itemWidth="50dp"

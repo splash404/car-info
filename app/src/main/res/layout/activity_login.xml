@@ -30,13 +30,9 @@
             android:padding="2dp"
             android:text="Verification"
             android:textColor="@color/black"
-<<<<<<< HEAD
             android:textSize="20dp"
             android:textStyle="bold" />
-=======
-            android:textSize="18dp"
-             />
->>>>>>> 9451567be63f91cb4d1364fcc3bec7e5bdfd4033
+
     </LinearLayout>
 
 
@@ -53,11 +49,7 @@
         <ImageView
             android:id="@+id/iv_flag"
             android:layout_width="25dp"
-<<<<<<< HEAD
             android:layout_height="15dp"
-=======
-            android:layout_height="25dp"
->>>>>>> 9451567be63f91cb4d1364fcc3bec7e5bdfd4033
             android:layout_marginLeft="15dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/flag" />
@@ -70,7 +62,6 @@
             android:layout_marginTop="8dp"
             android:layout_toEndOf="@+id/iv_flag"
             android:fontFamily="sans-serif-condensed-medium"
-<<<<<<< HEAD
             android:padding="2dp"
             android:text="+91"
             android:textColor="@color/black"
@@ -79,16 +70,13 @@
         <in.ddw.carinfo.customviews.TextviewMontserratMedium
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="6dp"
             android:layout_toRightOf="@+id/tv_concode"
             android:padding="2dp"
-            android:text="|" />
+            android:text="|"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
 
-=======
-            android:text="+91 |"
-            android:textSize="16dp"
-            android:textColor="@color/black"/>
->>>>>>> 9451567be63f91cb4d1364fcc3bec7e5bdfd4033
         <EditText
             android:id="@+id/ed_mbno"
             android:layout_width="match_parent"
@@ -120,14 +108,8 @@
         android:background="@drawable/send_button_background"
         android:padding="3dp"
         android:text="Send OTP"
-        android:textAllCaps="false"
         android:textColor="@color/white"
-<<<<<<< HEAD
-        android:textSize="15dp"
-=======
         android:textSize="16dp"
-        android:textAllCaps="false"
->>>>>>> 9451567be63f91cb4d1364fcc3bec7e5bdfd4033
         android:textStyle="bold" />
 
 
