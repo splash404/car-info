@@ -70,6 +70,111 @@
             app:cardCornerRadius="12dp"
             app:contentPadding="6dp">
 
+<<<<<<< HEAD
+=======
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_margin="5dp">
+
+              <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="User ID"
+                  android:textColor="@color/black"
+                  android:textSize="18dp"
+                  android:padding="5dp"/>
+
+              <EditText
+                  android:id="@+id/ed_userid"
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:padding="5dp"
+                  android:drawableLeft="@drawable/person"
+                  android:background="@drawable/layout_background"
+                  android:editable="false"
+                  android:text=" userid123"
+                  android:textColor="@color/black"
+                  android:drawablePadding="5dp"
+                  android:layout_marginTop="5dp"/>
+
+              <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Mobile Number"
+                  android:textColor="@color/black"
+                  android:textSize="18dp"
+                  android:padding="5dp"
+                  android:layout_marginTop="10dp"/>
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:padding="5dp"
+                  android:drawableLeft="@drawable/phone"
+                  android:background="@drawable/layout_background"
+                  android:editable="false"
+                  android:text=" 9876543210"
+                  android:textColor="@color/black"
+                  android:layout_marginTop="5dp"
+                  android:drawablePadding="5dp"/>
+
+              <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Your State"
+                  android:textColor="@color/black"
+                  android:textSize="18dp"
+                  android:padding="5dp"
+                  android:layout_marginTop="10dp"/>
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:padding="5dp"
+                  android:drawableLeft="@drawable/location"
+                  android:background="@drawable/layout_background"
+                  android:editable="false"
+                  android:text=" Maharashtra"
+                  android:textColor="@color/black"
+                  android:drawablePadding="5dp"
+                  android:layout_marginTop="5dp"/>
+
+
+              <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Language"
+                  android:textColor="@color/black"
+                  android:textSize="18dp"
+                  android:padding="5dp"
+                  android:layout_marginTop="10dp"/>
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:padding="5dp"
+                  android:drawableLeft="@drawable/globe"
+                  android:drawableRight="@drawable/arrowdown"
+                  android:background="@drawable/layout_background"
+                  android:editable="false"
+                  android:text=" English"
+                  android:textColor="@color/black"
+                  android:drawablePadding="5dp"
+                  android:layout_marginTop="5dp"/>
+
+          </LinearLayout>
+
+>>>>>>> c62930052679e21be3b64534789d649b7e2902cd
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
