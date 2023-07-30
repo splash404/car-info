@@ -3,4 +3,6 @@
     <string name="resend"><u>Resend code</u></string>
     <string name="verifyOTP">Verify OTP</string>
     <string name="edit"><u>Edit Details</u></string>
+    <string name="cancel"><u>Cancel</u></string>
+
 </resources>

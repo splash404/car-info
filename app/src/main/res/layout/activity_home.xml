@@ -122,6 +122,7 @@
                     android:layout_height="wrap_content">
 
                     <in.ddw.carinfo.customviews.TextviewMontserratBold
+                        android:id="@+id/tv_carinfo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Car Info"

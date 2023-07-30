@@ -54,6 +54,7 @@
                 android:textSize="26dp" />
 
             <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                android:id="@+id/tv_editdetails"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -70,8 +71,7 @@
             app:cardCornerRadius="12dp"
             app:contentPadding="6dp">
 
-<<<<<<< HEAD
-=======
+
           <LinearLayout
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
 
           </LinearLayout>
 
->>>>>>> c62930052679e21be3b64534789d649b7e2902cd
+
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pages.EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_arrow_white" />
+
+        <in.ddw.carinfo.customviews.TextviewMontserratMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <in.ddw.carinfo.customviews.TextviewMontserratBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Your Profile"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+
+            <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="12dp"
+            app:contentPadding="6dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User ID"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/ed_userid"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:drawableLeft="@drawable/person"
+                    android:background="@drawable/layout_background"
+                    android:inputType="text"
+                    android:text=" userid123"
+                    android:textColor="@color/black"
+                    android:drawablePadding="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:drawableLeft="@drawable/phone"
+                    android:background="@drawable/layout_background"
+                    android:inputType="number"
+                    android:text=" 9876543210"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"/>
+
+                <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your State"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:drawableLeft="@drawable/location"
+                    android:background="@drawable/layout_background"
+                      android:inputType="text"
+                    android:text=" Maharashtra"
+                    android:textColor="@color/black"
+                    android:drawablePadding="5dp"
+                    android:layout_marginTop="5dp"/>
+
+
+                <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Language"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:drawableLeft="@drawable/globe"
+                    android:drawableRight="@drawable/arrowdown"
+                    android:background="@drawable/layout_background"
+                    android:text=" English"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:drawablePadding="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_sendotp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/send_button_background"
+                        android:padding="3dp"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

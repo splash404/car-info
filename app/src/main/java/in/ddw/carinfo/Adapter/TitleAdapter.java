@@ -1,0 +1,53 @@
+package in.ddw.carinfo.Adapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
+
+import in.ddw.carinfo.Model.TitleModel;
+import in.ddw.carinfo.R;
+import in.ddw.carinfo.customviews.TextviewMontserratSemiBold;
+
+public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.MyViewHolder> {
+    Context context;
+    List<TitleModel> titleModelList;
+
+    public TitleAdapter(Context context, List<TitleModel> titleModelList) {
+        this.context = context;
+        this.titleModelList = titleModelList;
+    }
+
+
+    @NonNull
+    @Override
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.title_list_item, parent, false);
+        return new TitleAdapter.MyViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull TitleAdapter.MyViewHolder holder, int position) {
+        TitleModel tm = titleModelList.get(position);
+        holder.tv_titleheading.setText(tm.getTitle());
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return titleModelList.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        TextviewMontserratSemiBold tv_titleheading;
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            tv_titleheading = itemView.findViewById(R.id.tv_titleheading);
+        }
+    }
+}
