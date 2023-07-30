@@ -1,10 +1,12 @@
 package in.ddw.carinfo.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,6 +16,7 @@ import java.util.List;
 import in.ddw.carinfo.Model.NewsModel;
 import in.ddw.carinfo.R;
 import in.ddw.carinfo.customviews.TextviewMontserratBold;
+import in.ddw.carinfo.pages.CarInfoActivity;
 
 public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.NewAdapterHolder> {
 
@@ -43,6 +46,16 @@ public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.Ne
         holder.tv_date.setText(newsModel.getDate());
         holder.tvmb_title.setText(newsModel.getTitle());
 
+        holder.rl_parent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, CarInfoActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
+
+
+
     }
 
     @Override
@@ -56,6 +69,7 @@ public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.Ne
         TextviewMontserratBold tvmb_title;
         TextView tv_date;
         TextView tv_createBy;
+        RelativeLayout rl_parent ;
 
         public NewAdapterHolder(View itemView) {
             super(itemView);
@@ -64,6 +78,7 @@ public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.Ne
             tvmb_title = itemView.findViewById(R.id.tvmb_title);
             tv_date = itemView.findViewById(R.id.tv_date);
             tv_createBy = itemView.findViewById(R.id.tv_createBy);
+            rl_parent = itemView.findViewById(R.id.rl_parent);
 
         }
     }

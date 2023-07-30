@@ -34,10 +34,10 @@ public class LoginActivity extends AppCompatActivity {
     public void onButtonClick() {
         String mobileno = ed_mbno.getText().toString();
 
-        if (mobileno.equalsIgnoreCase("")) {
-            ed_mbno.setError("Please Enter Mobile No");
-            ed_mbno.requestFocus();
-        }
+//        if (mobileno.equalsIgnoreCase("")) {
+//            ed_mbno.setError("Please Enter Mobile No");
+//            ed_mbno.requestFocus();
+//        }
 //        else
 //        {
 //            //call api
