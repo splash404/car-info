@@ -16,6 +16,8 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        tv_editdetails = findViewById(R.id.tv_editdetails);
+
         tv_editdetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
