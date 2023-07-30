@@ -11,7 +11,6 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
-import in.ddw.carinfo.Adapter.StateAdapter;
 import in.ddw.carinfo.Adapter.TitleAdapter;
 import in.ddw.carinfo.Model.TitleModel;
 import in.ddw.carinfo.R;
@@ -23,7 +22,7 @@ public class TitleActivity extends AppCompatActivity {
     List<TitleModel> titleModelList;
 
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +31,7 @@ public class TitleActivity extends AppCompatActivity {
         rv_title = findViewById(R.id.rv_title);
 
         titleList();
-        rv_title = findViewById(R.id.rv_state);
+
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         rv_title.setLayoutManager(layoutManager);

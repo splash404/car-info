@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.List;
 import in.ddw.carinfo.Model.NewsModel;
 import in.ddw.carinfo.R;
 import in.ddw.carinfo.adapter.LatestNewsAdapter;
+import in.ddw.carinfo.customviews.TextviewMontserratSemiBold;
 
 public class Home extends AppCompatActivity {
 
@@ -24,6 +26,8 @@ public class Home extends AppCompatActivity {
     ImageView iv_profile,iv_setting;
 
     List<NewsModel> list = new ArrayList<>();
+
+    TextView tv_carinfo;
 
 
     @Override
@@ -50,6 +54,15 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Home.this,SettingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        tv_carinfo = findViewById(R.id.tv_carinfo);
+        tv_carinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,TitleActivity.class);
                 startActivity(intent);
             }
         });

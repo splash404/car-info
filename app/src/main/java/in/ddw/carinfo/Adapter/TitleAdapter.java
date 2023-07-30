@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -32,7 +33,7 @@ public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.MyViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull TitleAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(MyViewHolder holder, int position) {
         TitleModel tm = titleModelList.get(position);
         holder.tv_titleheading.setText(tm.getTitle());
 
@@ -44,7 +45,7 @@ public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.MyViewHolder
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextviewMontserratSemiBold tv_titleheading;
+        TextView tv_titleheading;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_titleheading = itemView.findViewById(R.id.tv_titleheading);

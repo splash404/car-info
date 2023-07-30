@@ -41,6 +41,7 @@
                 android:background="@drawable/circle_bg"
                 android:padding="5dp"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
                 android:src="@drawable/person" />
 
 
@@ -78,7 +79,7 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:hint="   News related to"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
