@@ -20,7 +20,6 @@ import in.ddw.carinfo.pages.CarInfoActivity;
 
 public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.NewAdapterHolder> {
 
-
     Context mContext;
     List<NewsModel> list;
 
@@ -53,9 +52,6 @@ public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.Ne
                 mContext.startActivity(intent);
             }
         });
-
-
-
     }
 
     @Override
@@ -69,7 +65,7 @@ public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.Ne
         TextviewMontserratBold tvmb_title;
         TextView tv_date;
         TextView tv_createBy;
-        RelativeLayout rl_parent ;
+        RelativeLayout rl_parent;
 
         public NewAdapterHolder(View itemView) {
             super(itemView);

@@ -20,7 +20,6 @@ public class TitleActivity extends AppCompatActivity {
     List<TitleModel> titleModelList;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

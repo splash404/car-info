@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".pages.SettingActivity">
 
-
     <RelativeLayout
         android:id="@+id/rl_header"
         android:layout_width="match_parent"
@@ -16,6 +15,44 @@
 
         <ImageView
             android:id="@+id/iv_back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/arrow_back_white" />
+
+        <in.ddw.carinfo.customviews.TextviewMontserratMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Setting"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/circle_bg"
+            android:padding="3dp"
+            android:src="@drawable/person" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentStart="true"
@@ -37,9 +74,8 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/iv_profile"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"

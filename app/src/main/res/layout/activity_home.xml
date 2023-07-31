@@ -27,42 +27,52 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="18dp"
-                        android:src="@drawable/location" />
+                        android:id="@+id/iv_location"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/location_white" />
 
-                    <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                    <in.ddw.carinfo.customviews.TextviewMontserratRegular
+                        android:id="@+id/tv_yourlocation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_location"
                         android:paddingLeft="3dp"
                         android:text="Your location"
                         android:textColor="@color/white"
                         android:textSize="12dp" />
 
                     <ImageView
-                        android:layout_width="25dp"
+                        android:layout_width="20dp"
                         android:layout_height="20dp"
+                        android:layout_centerVertical="true"
                         android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/tv_yourlocation"
                         android:src="@drawable/downarrow" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="28dp">
 
-                    <in.ddw.carinfo.customviews.TextviewMontserratBold
+                    <in.ddw.carinfo.customviews.TextviewMontserratMedium
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Maharashtra"
@@ -74,11 +84,12 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_centerVertical="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="3dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="5dp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:padding="2dp">
@@ -137,7 +148,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp">
 
-                    <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                    <in.ddw.carinfo.customviews.TextviewMontserratMedium
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
@@ -183,20 +194,21 @@
 
                                     <ImageView
                                         android:id="@+id/img"
-                                        android:layout_width="35dp"
-                                        android:layout_height="35dp"
-                                        android:layout_marginStart="10dp"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_centerHorizontal="true"
                                         android:layout_marginTop="2dp"
                                         android:layout_marginEnd="2dp"
                                         android:layout_marginBottom="2dp"
-                                        android:src="@drawable/ic_launcher_background" />
+                                        android:src="@drawable/check_challan" />
 
-                                    <in.ddw.carinfo.customviews.TextviewMontserratMedium
+                                    <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
                                         android:id="@+id/txt"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/img"
                                         android:padding="2dp"
+                                        android:layout_centerHorizontal="true"
                                         android:text="  Check\nChallans"
                                         android:textColor="@color/color_gray"
                                         android:textSize="12dp" />
@@ -218,19 +230,20 @@
 
                                     <ImageView
                                         android:id="@+id/img02"
-                                        android:layout_width="35dp"
-                                        android:layout_height="35dp"
-                                        android:layout_marginStart="10dp"
+                                        android:layout_width="30dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_height="30dp"
                                         android:layout_marginTop="2dp"
                                         android:layout_marginEnd="2dp"
                                         android:layout_marginBottom="2dp"
-                                        android:src="@drawable/ic_launcher_background" />
+                                        android:src="@drawable/sellyour_car" />
 
-                                    <in.ddw.carinfo.customviews.TextviewMontserratMedium
+                                    <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
                                         android:id="@+id/txt02"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/img02"
+                                        android:layout_centerHorizontal="true"
                                         android:padding="2dp"
                                         android:text="     Sell\nYour Card"
                                         android:textSize="12dp" />
@@ -254,22 +267,22 @@
 
                                     <ImageView
                                         android:id="@+id/img03"
-                                        android:layout_width="35dp"
-                                        android:layout_height="35dp"
-                                        android:layout_marginStart="10dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
                                         android:layout_marginTop="2dp"
                                         android:layout_marginEnd="2dp"
                                         android:layout_marginBottom="2dp"
-                                        android:src="@drawable/ic_launcher_background" />
+                                        android:src="@drawable/vehicle" />
 
-                                    <in.ddw.carinfo.customviews.TextviewMontserratMedium
+                                    <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
                                         android:id="@+id/txt03"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
                                         android:layout_below="@+id/img03"
                                         android:padding="2dp"
                                         android:text="Resake \n  Value"
-
                                         android:textSize="12dp" />
 
 
@@ -300,17 +313,18 @@
 
                                     <ImageView
                                         android:id="@+id/img4"
-                                        android:layout_width="35dp"
-                                        android:layout_height="35dp"
-                                        android:layout_marginStart="10dp"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
                                         android:layout_marginTop="2dp"
+                                        android:layout_centerHorizontal="true"
                                         android:layout_marginEnd="2dp"
                                         android:layout_marginBottom="2dp"
-                                        android:src="@drawable/ic_launcher_background" />
+                                        android:src="@drawable/vehicle" />
 
-                                    <in.ddw.carinfo.customviews.TextviewMontserratMedium
+                                    <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
                                         android:id="@+id/txt4"
                                         android:layout_width="wrap_content"
+                                        android:layout_centerHorizontal="true"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/img4"
                                         android:padding="2dp"
@@ -336,16 +350,17 @@
 
                                     <ImageView
                                         android:id="@+id/img05"
-                                        android:layout_width="35dp"
-                                        android:layout_height="35dp"
-                                        android:layout_marginStart="10dp"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_centerHorizontal="true"
                                         android:layout_marginTop="2dp"
                                         android:layout_marginEnd="2dp"
                                         android:layout_marginBottom="2dp"
-                                        android:src="@drawable/ic_launcher_background" />
+                                        android:src="@drawable/lightbulb" />
 
-                                    <in.ddw.carinfo.customviews.TextviewMontserratMedium
+                                    <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
                                         android:id="@+id/txt05"
+                                        android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/img05"
@@ -372,19 +387,20 @@
 
                                     <ImageView
                                         android:id="@+id/img06"
-                                        android:layout_width="35dp"
-                                        android:layout_height="35dp"
-                                        android:layout_marginStart="10dp"
+                                        android:layout_width="30dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_height="30dp"
                                         android:layout_marginTop="2dp"
                                         android:layout_marginEnd="2dp"
                                         android:layout_marginBottom="2dp"
-                                        android:src="@drawable/ic_launcher_background" />
+                                        android:src="@drawable/location" />
 
-                                    <in.ddw.carinfo.customviews.TextviewMontserratMedium
+                                    <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
                                         android:id="@+id/txt06"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/img06"
+                                        android:layout_centerHorizontal="true"
                                         android:padding="2dp"
                                         android:text="  See all \n Services"
                                         android:textSize="12dp" />
@@ -438,7 +454,7 @@
                     android:layout_marginTop="12dp"
                     android:orientation="vertical">
 
-                    <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                    <in.ddw.carinfo.customviews.TextviewMontserratMedium
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
@@ -468,7 +484,7 @@
                     android:layout_marginTop="12dp"
                     android:orientation="vertical">
 
-                    <in.ddw.carinfo.customviews.TextviewMontserratSemiBold
+                    <in.ddw.carinfo.customviews.TextviewMontserratMedium
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"

@@ -7,14 +7,13 @@
     android:background="@color/white"
     tools:context=".pages.OTPActivity">
 
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:background="@color/white"
         android:gravity="center_vertical"
-        app:navigationIcon="@drawable/baseline_chevron_left_24"
+        app:navigationIcon="@drawable/arrow_back_black"
         app:title="Verify" />
 
     <ImageView

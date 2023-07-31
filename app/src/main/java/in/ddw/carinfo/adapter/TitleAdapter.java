@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import in.ddw.carinfo.customviews.TextviewMontserratBold;
 import in.ddw.carinfo.model.TitleModel;
 import in.ddw.carinfo.R;
 
@@ -44,7 +45,7 @@ public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.MyViewHolder
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_titleheading;
+        TextviewMontserratBold tv_titleheading;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_titleheading = itemView.findViewById(R.id.tv_titleheading);

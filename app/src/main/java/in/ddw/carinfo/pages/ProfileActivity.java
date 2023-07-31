@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import in.ddw.carinfo.R;
-import in.ddw.carinfo.customviews.TextviewMontserratSemiBold;
+import in.ddw.carinfo.customviews.TextviewMontserratMedium;
 
 public class ProfileActivity extends AppCompatActivity {
-   TextviewMontserratSemiBold tv_editdetails;
+    TextviewMontserratMedium tv_editdetails;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
