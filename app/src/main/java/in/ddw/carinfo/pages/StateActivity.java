@@ -9,8 +9,8 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
-import in.ddw.carinfo.Adapter.StateAdapter;
-import in.ddw.carinfo.Model.StateModel;
+import in.ddw.carinfo.adapter.StateAdapter;
+import in.ddw.carinfo.model.StateModel;
 import in.ddw.carinfo.R;
 
 public class StateActivity extends AppCompatActivity {

@@ -1,18 +1,16 @@
 package in.ddw.carinfo.pages;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import in.ddw.carinfo.Adapter.TitleAdapter;
-import in.ddw.carinfo.Model.TitleModel;
+import in.ddw.carinfo.adapter.TitleAdapter;
+import in.ddw.carinfo.model.TitleModel;
 import in.ddw.carinfo.R;
 
 public class TitleActivity extends AppCompatActivity {

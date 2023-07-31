@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import in.ddw.carinfo.Model.NewsModel;
+import in.ddw.carinfo.model.NewsModel;
 import in.ddw.carinfo.R;
 import in.ddw.carinfo.customviews.TextviewMontserratBold;
 import in.ddw.carinfo.pages.CarInfoActivity;

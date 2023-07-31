@@ -1,4 +1,4 @@
-package in.ddw.carinfo.Adapter;
+package in.ddw.carinfo.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,9 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import in.ddw.carinfo.Model.TitleModel;
+import in.ddw.carinfo.model.TitleModel;
 import in.ddw.carinfo.R;
-import in.ddw.carinfo.customviews.TextviewMontserratSemiBold;
 
 public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.MyViewHolder> {
     Context context;

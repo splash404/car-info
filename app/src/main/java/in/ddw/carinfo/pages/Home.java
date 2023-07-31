@@ -13,10 +13,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import in.ddw.carinfo.Model.NewsModel;
-import in.ddw.carinfo.R;
 import in.ddw.carinfo.adapter.LatestNewsAdapter;
-import in.ddw.carinfo.customviews.TextviewMontserratSemiBold;
+import in.ddw.carinfo.model.NewsModel;
+import in.ddw.carinfo.R;
 
 public class Home extends AppCompatActivity {
 

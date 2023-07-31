@@ -1,4 +1,4 @@
-package in.ddw.carinfo.Model;
+package in.ddw.carinfo.model;
 
 public class StateModel {
 
