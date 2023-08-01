@@ -57,15 +57,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        tv_carinfo = findViewById(R.id.tv_carinfo);
-        tv_carinfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Home.this,TitleActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
+      }
 
     private void findId() {
 

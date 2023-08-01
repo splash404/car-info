@@ -62,7 +62,7 @@ public class LatestNewsAdapter extends RecyclerView.Adapter<LatestNewsAdapter.Ne
     public class NewAdapterHolder extends RecyclerView.ViewHolder {
 
         ImageView iv_latestNews;
-        TextviewMontserratBold tvmb_title;
+        TextView tvmb_title;
         TextView tv_date;
         TextView tv_createBy;
         RelativeLayout rl_parent;

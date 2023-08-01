@@ -10,7 +10,7 @@ import android.widget.Button;
 import in.ddw.carinfo.R;
 
 public class OTPActivity extends AppCompatActivity {
-    Button btn_otp;
+    View btn_otp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
